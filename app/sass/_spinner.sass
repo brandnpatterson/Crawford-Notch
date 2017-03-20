@@ -1,0 +1,34 @@
+#spinner
+  background: $light
+  border-radius: 50%
+  height: 30px
+  position: relative
+  margin: 35% auto
+  width: 30px
+
+  &:after, &:before
+    border-radius: 50%
+    content: ''
+    display: block
+    height: 30px
+    width: 30px
+
+#spinner:after
+  animation: spinner 1s linear infinite
+  border: 3px solid transparent
+  border-top-color: $dark
+  border-bottom-color: $dark
+  position: absolute
+  top: -3px
+  left: -3px
+
+@keyframes spinner
+  0%
+    transform: rotate(0deg) scale(1)
+  50%
+    transform: rotate(45deg) scale(1.2)
+  100%
+    transform: rotate(360deg) scale(1)
+
+#page
+  display: none

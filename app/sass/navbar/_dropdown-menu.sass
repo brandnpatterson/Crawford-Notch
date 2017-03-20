@@ -1,0 +1,36 @@
+.dropdown-menu-container
+  background: $white
+  height: 100vh
+  margin-top: 100px
+  position: fixed
+  width: 110vw
+  z-index: 1
+
+  .dropdown-menu
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin: -30px auto
+    position: fixed
+    z-index: 1
+    width: 80%
+
+    li
+      background: $white
+      border: 2px solid $dark
+      border-radius: 5px
+      cursor: pointer
+      flex: 1
+      padding: 20px
+      margin: 2%
+      height: 50px
+      text-align: center
+
+      &:hover
+        opacity: 0.5
+
+    a
+      color: $dark
+
+    .dropdown-shop-now
+      flex: 2
