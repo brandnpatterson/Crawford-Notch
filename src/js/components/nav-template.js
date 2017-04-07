@@ -1,5 +1,3 @@
-import Handlebars from 'handlebars'
-
 var navTemplate = document.getElementById('nav-template').innerHTML;
 var template = Handlebars.compile(navTemplate);
 var navData = template({
