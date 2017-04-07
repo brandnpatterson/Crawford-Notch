@@ -1,20 +1,15 @@
 @import 'util/_normalize';
 
-@import 'basics/_vars';
-@import 'basics/_basics';
+// vars
+@import '_vars';
 
 // root
-@import 'components/_page';
 @import 'components/_spinner';
+@import '_app';
 
-// navbar
-@import 'header/_header';
-@import 'header/_shop-now';
-@import 'header/_dropbtn';
-@import 'header/_dropdown-menu';
-
+// components
+@import 'components/header/_header';
+@import 'components/header/_shop-now';
+@import 'components/header/_dropbtn';
+@import 'components/header/_dropdown-menu';
 @import 'components/_footer';
-@import 'components/_spinner';
-
-// content
-@import 'content/_content';
