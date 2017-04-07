@@ -1,9 +1,10 @@
 // normal page content loaded after the spinner
-body
-  background: url('../images/landing.jpeg') center no-repeat fixed
+#app
+  background: url('../public/images/landing.jpeg') no-repeat center center fixed
   background-size: cover
-  margin: 0
-  width: 100vw
+  height: 100vh
+  +mediaQuery($smallest)
+    background-attachment: scroll
 
   a
     text-decoration: none

@@ -1,7 +1,7 @@
 .header
   font-family: Verdana
   position: fixed
-  
+
   a,
   li
     color: $light
@@ -42,9 +42,8 @@
 
   // ul.slide
   .nav-links
-    li
-      +mediaQuery($small)
-        display: none
+    +mediaQuery($small)
+      display: none
 
 // shrink & grow navbar
 .shrink-navbar
