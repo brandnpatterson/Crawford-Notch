@@ -4,8 +4,8 @@
 @import 'basics/_basics';
 
 // root
-@import '_spinner';
-@import '_page';
+@import 'components/_page';
+@import 'components/_spinner';
 
 // navbar
 @import 'navbar/_navbar';
@@ -14,9 +14,7 @@
 @import 'navbar/_dropdown-menu';
 
 @import 'components/_footer';
+@import 'components/_spinner';
 
 // content
 @import 'content/_content';
-
-// media queries
-@import '_media';

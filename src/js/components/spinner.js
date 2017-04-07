@@ -15,7 +15,8 @@ function onReady(callback) {
 function show(id, value) {
   document.getElementById(id).style.display = value ? 'block' : 'none';
 }
-
+// If you change the id of either 'page' or 'spinner',
+// you must change the string value in the function call
 onReady(function () {
   show('page', true);
   show('spinner', false);

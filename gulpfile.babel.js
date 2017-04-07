@@ -11,26 +11,26 @@ import webpack    from 'webpack-stream';
 
 var reload = sync.reload;
 
-gulp.task('clean', del.bind(null, ['index.html', 'dist/css', 'dist/js'], {read: false}));
+gulp.task('clean', del.bind(null, ['index.html', 'public/index.css', 'public/bundle.js'], {read: false}));
 
-gulp.task('clean:images', del.bind(null, ['dist/images'], {read: false}));
+gulp.task('clean:images', del.bind(null, ['public/images'], {read: false}));
 
 gulp.task('default', ['html', 'server', 'styles', 'watch']);
 
 gulp.task('html', () => {
-  return gulp.src('app/index.html')
+  return gulp.src('src/index.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./'))
 });
 
 gulp.task('images', ['clean:images'], () => {
-  return gulp.src('app/images/*')
+  return gulp.src('src/images/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('public/images'));
 });
 
 gulp.task('lint', () => {
-  return gulp.src(['*/**/*.js', '!node_modules/*', '!dist/includes/*'])
+  return gulp.src(['*/**/*.js', '!node_modules/*', '!public/includes/*'])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
@@ -47,22 +47,22 @@ gulp.task('server', () => {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['app/js/index.js'])
+  return gulp.src(['src/js/index.js'])
     .pipe(webpack( require('./webpack.config.js') ))
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('public'));
 });
 
 gulp.task('styles', () => {
-  return gulp.src('app/sass/style.scss')
+  return gulp.src('src/sass/index.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(prefix('last 2 versions'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('public'))
 });
 
 gulp.task('watch', () => {
-  gulp.watch('app/js/**/*', ['scripts', reload]);
-  gulp.watch('app/index.html', ['html', reload]);
-  gulp.watch('app/sass/**/*', ['styles', reload]);
+  gulp.watch('src/js/**/*', ['scripts', reload]);
+  gulp.watch('src/index.html', ['html', reload]);
+  gulp.watch('src/sass/**/*', ['styles', reload]);
 });

@@ -6,12 +6,12 @@ module.exports = {
     port: 8888,
     stats: 'errors only'
   },
-  context: path.join(__dirname, './app'),
+  context: path.join(__dirname, './src'),
   entry: [
     './js/index.js',
   ],
   output: {
-    path: path.resolve(__dirname, './dist/js'),
+    path: path.resolve(__dirname, './public/js'),
     filename: 'bundle.js',
   },
   module: {
