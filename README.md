@@ -5,11 +5,12 @@ It can be found live here: https://goldilox-prints.surge.sh
 # Done
 √ Create template for multi-use nav with Handlebars <br />
 √ Position shop-now button under right-most nav <br />
+√ Set dropdown-menu animations
 
 # Current
-- Figure out why mobile drop down isn't working
+- Replace jQuery animation on shop-now & modal with keyframes
 
 # Todo
 - Simplify shop-now logic
-- jQuery animations -> CSS transitions
+- Add router (director)
 - Consider libraries to install (Unslider, Instafeed)
