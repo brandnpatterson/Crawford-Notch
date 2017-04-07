@@ -1,9 +1,11 @@
+@import ../../app
+
 .header
   font-family: Verdana
   position: fixed
 
-  a,
-  li
+  a
+    @extend .text-shadow
     color: $light
 
   ul
@@ -23,12 +25,6 @@
     +mediaQuery($smallest)
       margin-left: -30px
 
-  .logo-header
-    height: 100px
-    padding: 40px 0 0 53.5px
-    position: fixed
-    z-index: 1
-
   .navbar
     background: $dark
     box-shadow: 3px 0 5px #888
@@ -40,7 +36,6 @@
     +mediaQuery($smallest)
       width: 108%
 
-  // ul.slide
   .nav-links
     +mediaQuery($small)
       display: none

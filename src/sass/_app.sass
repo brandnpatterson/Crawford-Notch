@@ -1,5 +1,16 @@
 // normal page content loaded after the spinner
+
 #app
+  @keyframes page-load
+    0%
+      opacity: 0
+    100%
+      opacity: 1
+  animation: page-load 2s
+  animation-fill-mode: forwards
+  backface-visibility: hidden
+  perspective: 1000
+  display: none
   background: url('../public/images/landing.jpeg') no-repeat center center fixed
   background-size: cover
   height: 100vh
@@ -12,14 +23,21 @@
   li
     display: inline-block
 
-#app
-  display: none
-  @keyframes page-load
-    0%
-      opacity: 0
-    100%
-      opacity: 1
-  animation: page-load 2s
-  animation-fill-mode: forwards
-  backface-visibility: hidden
-  perspective: 1000
+.centered-parent
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.panel
+  @extend .centered-parent
+  background: $white
+  height: 400px
+  text-align: center
+
+.panel.clear
+  background: none
+  color: $white
+
+.text-shadow
+  text-shadow: 2px 2px 4px #000
