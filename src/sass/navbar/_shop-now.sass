@@ -1,22 +1,21 @@
 .shop-now ul li a
-  background: $gold
-  border: 2px solid $dark
-  border-radius: 5px
+  background: $darkgreen
+  border: 2px solid $light
+  color: $light
   padding: 20px
+  text-shadow: 2px 2px 4px #000000
+  top: 100px
   position: fixed
-  bottom: 5%
-  right: -13%
   z-index: 1
-
   &:hover
     opacity: 0.5
 
 .slide-in-shop-now
   @keyframes slide-in-shop-now
     0%
-      right: -13%
+      right: -50px
     100%
-      right: 5%
+      right: 50px
   animation: slide-in-shop-now 0.5s
   animation-fill-mode: forwards
   backface-visibility: hidden
@@ -25,9 +24,9 @@
 .slide-out-shop-now
   @keyframes slide-out-shop-now
     0%
-      right: 5%
+      right: 50px
     100%
-      right: -13%
+      right: -50px
   animation: slide-out-shop-now 0.5s
   animation-fill-mode: forwards
   backface-visibility: hidden
