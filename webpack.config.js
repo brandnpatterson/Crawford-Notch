@@ -23,6 +23,10 @@ module.exports = {
         query: {
           presets: ['latest']
         }
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   },
