@@ -7,25 +7,18 @@ import $ from 'jquery';
 const dropdownMenu = (function () {
 
   // CacheDOM
-  const $body             = $('body');
-  const $dropBtn          = $('.drop-btn');
-  const $dropdownMenuCont = $('.dropdown-menu-container');
-  const $logo             = $('.logo');
-  const $logoHeader       = $('.logo-header');
-  const $navbar           = $('.navbar');
+  const $body    = $('body');
+  const $dropBtn = $('.drop-btn');
+  const $logo    = $('.logo');
+  const $modal   = $('.modal');
+  const $navbar  = $('.navbar');
 
   // Initial state
-  $dropdownMenuCont.hide();
+  $modal.hide();
 
   function toggleDropBtn () {
     $dropBtn.toggleClass('drop-btn-change');
-
-    $dropdownMenuCont.fadeToggle();
-    if ($logo.is(':visible')) {
-      $dropdownMenuCont.css('top', '13%');
-    } else if ($logoHeader.is(':visible')) {
-      $dropdownMenuCont.css('top', '25%');
-    }
+    $modal.fadeToggle();
 
     if(!$navbar.hasClass('shrink-navbar')) {
       $navbar.fadeToggle();
