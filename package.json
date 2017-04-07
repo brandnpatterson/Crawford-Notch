@@ -1,11 +1,11 @@
 {
-  "name": "Goldilocks-Prints",
+  "name": "crawford-notch",
   "version": "1.0.2",
   "scripts": {
     "start": "gulp clean && gulp scripts && gulp"
   },
   "author": "Brandon Patterson",
-  "description": "Goldilocks-Prints",
+  "description": "crawford-notch",
   "main": "index.html",
   "url": "",
   "homepage": "",
@@ -36,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brandnpatterson/Goldilocks-Prints.git"
+    "url": "git+https://github.com/brandnpatterson/crawford-notch.git"
   },
   "bugs": {
-    "url": "https://github.com/brandnpatterson/Goldilocks-Prints/issues"
+    "url": "https://github.com/brandnpatterson/crawford-notch/issues"
   }
 }
