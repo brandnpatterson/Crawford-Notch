@@ -13,20 +13,12 @@ var reload = sync.reload;
 
 gulp.task('clean', del.bind(null, ['index.html', 'public/index.css', 'public/bundle.js'], {read: false}));
 
-gulp.task('clean:images', del.bind(null, ['public/images'], {read: false}));
-
 gulp.task('default', ['html', 'server', 'styles', 'watch']);
 
 gulp.task('html', () => {
   return gulp.src('src/index.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./'))
-});
-
-gulp.task('images', ['clean:images'], () => {
-  return gulp.src('src/images/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('public/images'));
 });
 
 gulp.task('lint', () => {
