@@ -6,11 +6,12 @@
 @import 'basics/_mixins';
 
 // components
+@import 'components/_logo';
 @import 'components/_sections';
-@import 'components/_header';
-@import 'components/_footer';
+@import 'components/_section1';
 @import 'components/_instafeed';
 @import 'components/_modal';
+@import 'components/_footer';
 
 
 // ./header
