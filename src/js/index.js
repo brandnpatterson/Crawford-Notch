@@ -3,3 +3,4 @@
 **/
 
 import './app.js';
+import './instafeed.js';

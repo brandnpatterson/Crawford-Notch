@@ -1,0 +1,26 @@
+.section2
+  @include background('../public/images/section2.jpeg')
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5)
+  height: 100vh
+
+  div
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-family: 'Aargh'
+
+    h2
+      color: $coral
+      font-size: 30px
+      margin: 20px 0 0
+    p
+      color: $white
+      display: inline-block
+      font-size: 16px
+      margin: 5px 0 30px
+
+    iframe
+      width: 90%
+      @include mediaQuery($medium)
+        width: 70%
+        height: 300px

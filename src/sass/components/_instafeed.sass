@@ -1,10 +1,16 @@
 #instafeed
-  padding-top: 20px
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
-  align-items: center
-  justify-content: center
-
+  text-align: center
+  @include mediaQuery($small)
+    padding-top: 20px
+    padding: 50px 0 50px !important
   img
+    height: 125px
     padding: 10px
+    width: 125px
+    @include mediaQuery($medium)
+      padding: 30px 10px
+      height: 200px
+      width: 200px
+
+    &:hover
+      opacity: 0.5
