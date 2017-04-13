@@ -11,9 +11,10 @@
 @import 'components/_section1';
 @import 'components/_section2';
 @import 'components/_instafeed';
-@import 'components/_modal';
 @import 'components/_footer';
 
 
 // ./header
 @import 'components/header/_dropbtn';
+@import 'components/header/_modal';
+@import 'components/header/_nav';
