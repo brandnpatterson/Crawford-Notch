@@ -1,33 +1,18 @@
 footer
+  display: flex
+  align-items: center
+  justify-content: center
   background-color: $dark
-  height: 250px
-  overflow: hidden
-  position: absolute
-  margin: 1000px auto 0
+  bottom: 0
   width: 100vw
-  z-index: -1
+  position: fixed
 
-  ul
-    display: flex
-    padding-top: 50px
-    flex-direction: row
-    +mediaQuery($smallest)
-      align-items: center
+  .icon
+      color: $white
+      display: flex
       flex-direction: column
-      justify-content: center
-      padding-left: 0
-    a
-      color: $light
-    li
-      width: 100px
-      text-align: center
-
-  .copyright
-    color: $light
-    position: absolute
-    bottom: 0
-    left: 10px
-    width: 100vw
-    +mediaQuery($smallest)
-    .copyright
-      padding-top: 80px
+      align-items: center
+      padding: 20px 50px
+      p
+        margin: 0
+        text-align: center

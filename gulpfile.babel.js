@@ -11,7 +11,7 @@ import webpack    from 'webpack-stream';
 
 var reload = sync.reload;
 
-gulp.task('clean', del.bind(null, ['index.html', 'public/index.css', 'public/bundle.js'], {read: false}));
+gulp.task('clean', del.bind(null, ['index.html', 'public/style.css', 'public/bundle.js'], {read: false}));
 
 gulp.task('default', ['html', 'server', 'styles', 'watch']);
 
@@ -45,7 +45,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('styles', () => {
-  return gulp.src('src/sass/index.scss')
+  return gulp.src('src/sass/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(prefix('last 2 versions'))
