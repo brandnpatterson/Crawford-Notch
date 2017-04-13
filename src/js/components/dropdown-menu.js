@@ -9,7 +9,6 @@ const dropdownMenu = (function () {
   // CacheDOM
   const $body    = $('body');
   const $dropBtn = $('.drop-btn');
-  const $logo    = $('.logo');
   const $modal   = $('.modal');
   const $navbar  = $('.navbar');
 

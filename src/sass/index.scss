@@ -3,16 +3,11 @@
 // vars
 @import '_vars';
 
-// root
-@import 'components/_spinner';
-@import '_app';
-
 // components
-@import 'components/header/_header';
-@import 'components/header/_shop-now';
-@import 'components/header/_dropbtn';
-@import 'components/header/_dropdown-menu';
+@import 'components/_app';
+@import 'components/_header';
 @import 'components/_footer';
 
-// routes
-@import 'routes/_landing';
+// ./header
+@import 'components/header/_dropbtn';
+@import 'components/header/_dropdown-menu';
