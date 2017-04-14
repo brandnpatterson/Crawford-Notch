@@ -22,7 +22,7 @@ const app = {
     this.$window.scroll(this.toggleNavbar.bind(this));
   },
   toggleDropBtn () {
-    if ($nav.hasClass('modal')) {
+    if (this.$nav.is('.modal')) {
       this.$dropBtn
       .toggleClass('drop-btn-x')
       .toggleClass('drop-btn-hamburger');

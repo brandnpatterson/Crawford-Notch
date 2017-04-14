@@ -7,7 +7,7 @@
   },
   "author": "Brandon Patterson",
   "description": "crawford-notch",
-  "main": "index.html",
+  "main": "public/bundle.js",
   "url": "",
   "homepage": "",
   "license": "MIT",
