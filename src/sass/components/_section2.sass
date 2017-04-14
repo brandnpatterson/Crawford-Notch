@@ -1,6 +1,6 @@
 .section2
   @include background('../public/images/section2.jpeg')
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5)
+  box-shadow: inset 0 0 0 1000px $boxShadow
   height: 100vh
 
   div
@@ -10,7 +10,7 @@
     font-family: 'Aargh'
 
     h2
-      color: $coral
+      color: $light
       font-size: 20px
       @include mediaQuery($medium)
         font-size: 30px

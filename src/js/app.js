@@ -1,5 +1,5 @@
 /**
- *  Dropdown-menu
+ *  App
  */
 
 import $ from 'jquery';
@@ -18,14 +18,16 @@ const app = {
   },
   bindEvents () {
     this.$dropBtn.on('click', this.toggleDropBtn.bind(this));
-    this.$modal.on('click', this.toggleDropBtn.bind(this));
+    this.$nav.on('click', this.toggleDropBtn.bind(this));
     this.$window.scroll(this.toggleNavbar.bind(this));
   },
   toggleDropBtn () {
-    this.$dropBtn
-    .toggleClass('drop-btn-x')
-    .toggleClass('drop-btn-hamburger');
-    this.$modal.toggleClass('visible');
+    if ($nav.hasClass('modal')) {
+      this.$dropBtn
+      .toggleClass('drop-btn-x')
+      .toggleClass('drop-btn-hamburger');
+      this.$modal.toggleClass('visible');
+    }
   },
   toggleNavbar () {
     if(this.$document.scrollTop() > 10 && this.$window.width() > 724) {

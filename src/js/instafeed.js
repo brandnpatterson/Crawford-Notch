@@ -2,8 +2,6 @@
  * Instafeed calling userID and using accessToken
 **/
 
-// Require Instafeed
-
 import Instafeed from 'instafeed.js';
 
 const userFeed = new Instafeed({
