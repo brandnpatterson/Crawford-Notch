@@ -11,3 +11,4 @@ It can be found live here: https://crawford-notch.surge.sh
 
 # Todo
 - Consider other libraries to install
+- Add pop up animation on Instafeed (opacity, transition back and forth / jump / pop out)
