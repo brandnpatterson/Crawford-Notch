@@ -1,5 +1,5 @@
 # Crawford Notch
-Single Page Application Template built with jQuery and Handlebars <br />
+Single Page Application Template built with jQuery and Instafeed <br />
 It can be found live here: https://crawford-notch.surge.sh
 
 # Done
