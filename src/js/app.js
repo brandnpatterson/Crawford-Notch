@@ -21,6 +21,7 @@ $(document).ready(function crawfordNotch() {
       this.$dropBtn.on('click', this.toggleDropBtn.bind(this));
       this.$nav.on('click', this.toggleDropBtn.bind(this));
       this.$window.scroll(this.toggleNavbar.bind(this));
+      this.$window.resize(this.onResizeBrowser.bind(this));
     },
     toggleDropBtn () {
       if (this.$nav.is('.modal')) {
@@ -31,12 +32,21 @@ $(document).ready(function crawfordNotch() {
       }
     },
     toggleNavbar () {
-      if(this.$document.scrollTop() > 10 && this.$window.width() > 724) {
-        this.$nav.addClass('nav-desktop');
-        this.$nav.removeClass('modal');
-      } else if(this.$document.scrollTop() <= 5 && this.$window.width() > 724) {
-        this.$nav.addClass('modal');
-        this.$nav.removeClass('nav-desktop');
+      if (this.$document.scrollTop() > 10 && this.$window.width() > 724) {
+        this.$nav
+        .addClass('nav-desktop')
+        .removeClass('modal');
+      } else if (this.$document.scrollTop() <= 5 && this.$window.width() > 724) {
+        this.$nav
+        .addClass('modal')
+        .removeClass('nav-desktop');
+      }
+    },
+    onResizeBrowser () {
+      if (this.$window.width() < 724) {
+        this.$nav
+        .addClass('modal')
+        .removeClass('nav-desktop');
       }
     }
   };
