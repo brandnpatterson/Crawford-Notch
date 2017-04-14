@@ -9,7 +9,19 @@
     justify-content: center
     text-align: center
     font-family: 'Aargh'
+
     h2
+      color: $white
       letter-spacing: 5px
       padding-top: 100px
-      color: $white
+      @include mediaQuery($small)
+        padding-top: 280px
+      @include mediaQuery($medium)
+        padding-top: 200px
+        font-size: 30px
+      @include mediaQuery($large)
+        padding-top: 300px
+        font-size: 30px
+    a
+      @include mediaQuery($medium)
+        font-size: 20px
