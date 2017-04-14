@@ -1,0 +1,42 @@
+#about
+  .content
+    hr
+      margin-top: 100px
+      border-color: $modal
+      width: 90%
+    .top,
+    .bottom
+      display: flex
+      flex-direction: column
+      align-items: center
+      font-family: 'Aargh'
+      button
+        margin: 0 0 50px
+      h2
+        margin: 50px 0 0
+        color: $black
+        font-size: 20px
+        @include mediaQuery($medium)
+          font-size: 30px
+      p
+        margin: 25px
+        color: $black
+        display: inline-block
+        text-align: center
+        font-size: 16px
+        width: 90%
+        @include mediaQuery($small)
+          font-size: 20px
+          width: 60%
+      img
+        width: 300px
+        height: 200px
+        @include mediaQuery($medium)
+          width: 600px
+          height: 400px
+        margin-bottom: -40px
+      iframe
+        width: 90%
+        @include mediaQuery($medium)
+          width: 70%
+          height: 300px

@@ -5,15 +5,16 @@
 @import 'basics/_basics';
 @import 'basics/_mixins';
 
-// components
-@import 'components/_logo';
-@import 'components/_landing';
-@import 'components/_selection';
-@import 'components/_instafeed';
-@import 'components/_hours';
-@import 'components/_footer';
-
 // ./header
 @import 'components/header/_dropbtn';
 @import 'components/header/_modal';
 @import 'components/header/_nav';
+
+// components
+@import 'components/_logo';
+@import 'components/_landing';
+@import 'components/_about';
+@import 'components/_selection';
+@import 'components/_instafeed';
+@import 'components/_hours';
+@import 'components/_footer';
