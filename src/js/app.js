@@ -5,6 +5,9 @@
 import $ from 'jquery';
 
 $(document).ready(function crawfordNotch() {
+  // same var name as sass
+  const $medium = 724;
+
   const app = {
     init () {
       this.cacheDOM();
@@ -17,7 +20,7 @@ $(document).ready(function crawfordNotch() {
       this.$instafeed = $('#instafeed');
       this.$modal = $('.modal');
       this.$nav = $('nav');
-      this.$selectionH2 = $('.selection-h2');
+      this.$selection = $('#selection');
       this.$window = $(window);
     },
     bindEvents () {
@@ -35,20 +38,20 @@ $(document).ready(function crawfordNotch() {
       }
     },
     listenForScroll () {
-      if (this.$document.scrollTop() > 10 && this.$window.width() > 724) {
+      if (this.$document.scrollTop() > 10 && this.$window.width() > $medium) {
         this.$nav
         .addClass('nav-desktop')
         .removeClass('modal');
-      } else if (this.$document.scrollTop() <= 5 && this.$window.width() > 724) {
+      } else if (this.$document.scrollTop() <= 5 && this.$window.width() > $medium) {
         this.$nav
         .addClass('modal')
         .removeClass('nav-desktop');
       }
-      if (this.$document.scrollTop() > 250) {
+      if (this.$document.scrollTop() > 230) {
         this.$aboutImg.addClass('fade-in');
       }
-      if (this.$document.scrollTop() > 700) {
-        this.$selectionH2.addClass('fade-in');
+      if (this.$document.scrollTop() > 750) {
+        this.$selection.addClass('fade-in');
       }
       if (this.$document.scrollTop() > 1700) {
         this.$instafeed.addClass('fade-in');
