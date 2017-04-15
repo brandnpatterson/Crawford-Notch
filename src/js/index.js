@@ -2,6 +2,6 @@
  *  Webpack entry point
 **/
 
-import './spinner.js';
+import './page-load.js';
 import './app.js';
 import './instafeed.js';
