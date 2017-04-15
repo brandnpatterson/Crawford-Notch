@@ -4,7 +4,7 @@
   height: 100vh
 
   .flex-container
-    
+
     h2
       color: $light
       font-size: 20px
@@ -20,6 +20,8 @@
 
     iframe
       width: 90%
+      height: 200px
+      @include mediaQuery($small)
+        width: 75%
       @include mediaQuery($medium)
-        width: 70%
-        height: 300px
+        width: 50%

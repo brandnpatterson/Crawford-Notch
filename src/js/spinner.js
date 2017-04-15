@@ -19,5 +19,4 @@ function show(id, value) {
 // you must change the string value in the function call
 onReady(function () {
   show('app', true);
-  show('spinner-container', false);
 });

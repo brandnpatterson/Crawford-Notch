@@ -1,41 +1,41 @@
-// spinner displayed while normal page content loads
-
-#spinner-container
-  position: fixed
-  top: 0
-  background: $dark
-  width: 100vw
-  height: 100vh
-
-  #spinner
-    background: $light
-    border-radius: 100px
-    display: block
-    height: 20px
-    position: relative
-    margin: 35% auto
-    width: 20px
-
-    &:after,
-    &:before
-      border-radius: 50%
-      content: ''
-      display: block
-      height: 20px
-      width: 20px
-
-  #spinner:after
-    @keyframes spinner
-      0%
-        transform: rotate(0deg) scale(1)
-      50%
-        transform: rotate(350deg) scale(1.3)
-      100%
-        transform: rotate(480deg) scale(1)
-    animation: spinner 1s linear infinite
-    border: 3px solid transparent
-    border-top-color: $light
-    border-bottom-color: $light
-    position: absolute
-    top: -3px
-    left: -3px
+// // spinner displayed while normal page content loads
+//
+// #spinner-container
+//   position: fixed
+//   top: 0
+//   background: $dark
+//   width: 100vw
+//   height: 100vh
+//
+//   #spinner
+//     background: $light
+//     border-radius: 100px
+//     display: block
+//     height: 20px
+//     position: relative
+//     margin: 35% auto
+//     width: 20px
+//
+//     &:after,
+//     &:before
+//       border-radius: 50%
+//       content: ''
+//       display: block
+//       height: 20px
+//       width: 20px
+//
+//   #spinner:after
+//     @keyframes spinner
+//       0%
+//         transform: rotate(0deg) scale(1)
+//       50%
+//         transform: rotate(350deg) scale(1.3)
+//       100%
+//         transform: rotate(480deg) scale(1)
+//     animation: spinner 1s linear infinite
+//     border: 3px solid transparent
+//     border-top-color: $light
+//     border-bottom-color: $light
+//     position: absolute
+//     top: -3px
+//     left: -3px
