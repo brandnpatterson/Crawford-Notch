@@ -15,7 +15,7 @@ function onReady(callback) {
 function show(id, value) {
   document.getElementById(id).style.display = value ? 'block' : 'none';
 }
-// If you change the id of either 'app' or 'spinner',
+// If you change the id of either 'app',
 // you must change the string value in the function call
 onReady(function () {
   show('app', true);
