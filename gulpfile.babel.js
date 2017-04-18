@@ -13,7 +13,7 @@ var reload = sync.reload;
 
 gulp.task('clean', del.bind(null, ['index.html', 'public/style.css', 'public/bundle.js'], {read: false}));
 
-gulp.task('default', ['html', 'server', 'styles', 'watch']);
+gulp.task('default', ['html', 'scripts', 'server', 'styles', 'watch']);
 
 gulp.task('html', () => {
   return gulp.src('src/index.html')

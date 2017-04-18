@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "scripts": {
     "deploy": "webpack -p",
-    "start": "gulp clean && gulp scripts && gulp"
+    "start": "gulp clean && gulp"
   },
   "author": "Brandon Patterson",
   "description": "crawford-notch",
