@@ -1,21 +1,48 @@
-.nav-desktop
-  background: $dark
-  height: 100px
-  position: fixed
-  width: 100vw
-  z-index: 1
 
+nav
+  display: none
   ul
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: center
-    padding-top: 25px
-
+    padding: 0
     li
       text-align: center
-      margin: 0 50px
-
+      margin: 70px 0
       a
         color: $white
-        font-size: 20px
+        letter-spacing: 0
+        @include mediaQuery($medium)
+          letter-spacing: 8px
+        font-size: 30px
+        &:hover
+          color: $light
+  +mediaQuery($small)
+    display: block
+    background: none
+    height: 80px
+    position: fixed
+    width: 100vw
+    z-index: 1
+    ul
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      padding-top: 15px
+      li
+        text-align: center
+        margin: 0 50px
+        a
+          color: $white
+          font-size: 20px
+.visible
+  animation: fade-in 1s
+  animation-fill-mode: forwards
+  backface-visibility: hidden
+  perspective: 1000
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  background: $black
+  height: 100vh
+  width: 100vw
+  position: fixed
+  z-index: 1
