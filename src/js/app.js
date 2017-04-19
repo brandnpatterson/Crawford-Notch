@@ -32,10 +32,15 @@ $(document).ready(function crawfordNotch() {
         this.$dropBtn
         .toggleClass('drop-btn-x')
         .toggleClass('drop-btn-hamburger');
-        this.$nav.toggleClass('visible');
+        this.$nav.toggleClass('nav-mobile-visible');
       }
     },
     listenForScroll () {
+      if (this.$document.scrollTop() > 90) {
+        this.$nav.addClass('nav-desktop-scrolled');
+      } else if (this.$document.scrollTop() < 90) {
+        this.$nav.removeClass('nav-desktop-scrolled');
+      }
       if (this.$document.scrollTop() > 230) {
         this.$aboutImg.addClass('fade-in');
       }
