@@ -2,11 +2,16 @@
   opacity: 0
   text-align: center
   padding: 20px 0 50px
+  margin: 0 auto
+  +mediaQuery($medium)
+    max-width: 70%
+  +mediaQuery($large)
+    max-width: 50%
   img
     height: 125px
     padding: 10px
     width: 125px
-    @include mediaQuery($small)
+    +mediaQuery($small)
       height: 200px
       width: 200px
     &:hover

@@ -1,12 +1,12 @@
 #hours
-  @include background('../public/images/section2.jpeg')
+  +background('../public/images/section2.jpeg')
   box-shadow: inset 0 0 0 1000px $boxShadow
   height: 100vh
   .flex-container
     h2
       color: $light
       font-size: 20px
-      @include mediaQuery($medium)
+      +mediaQuery($medium)
         font-size: 30px
       margin: 30px 0 0
     p
@@ -18,7 +18,7 @@
     iframe
       width: 90%
       height: 200px
-      @include mediaQuery($small)
+      +mediaQuery($small)
         width: 75%
-      @include mediaQuery($medium)
+      +mediaQuery($medium)
         width: 50%
