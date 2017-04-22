@@ -12,10 +12,8 @@
   "homepage": "",
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^4.0.6",
     "instafeed.js": "^1.4.1",
-    "jquery": "^3.2.1",
-    "unslider": "^2.0.3"
+    "jquery": "^3.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
