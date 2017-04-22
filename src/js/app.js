@@ -36,7 +36,7 @@ $(document).ready(function crawfordNotch() {
       }
     },
     listenForScroll () {
-      if (this.$document.scrollTop() > 90) {
+      if (this.$document.scrollTop() > 90 && this.$window.width() > $medium) {
         this.$nav.addClass('nav-desktop-scrolled');
       } else if (this.$document.scrollTop() < 90) {
         this.$nav.removeClass('nav-desktop-scrolled');
