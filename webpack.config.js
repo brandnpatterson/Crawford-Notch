@@ -3,6 +3,9 @@ var path = require('path');
 module.exports = {
   devtool: 'inline-sourcemap',
   devServer: {
+    host: '0.0.0.0',
+    hot: true,
+    open: true,
     port: 8888,
     stats: 'errors only'
   },
