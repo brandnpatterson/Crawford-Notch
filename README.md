@@ -9,6 +9,7 @@ It can be found live here: https://crawford-notch.surge.sh
 √ Add social media icons <br />
 √ Consider other libraries to install <br />
 √ Add Instafeed <br />
+√ Add Handlebars for brews list <br />
 
 # Current
 
