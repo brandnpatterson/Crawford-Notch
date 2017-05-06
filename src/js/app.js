@@ -40,10 +40,10 @@ $(document).ready(function crawfordNotch () {
       } else if (this.$document.scrollTop() < 90) {
         this.$nav.removeClass('nav-desktop-scrolled');
       }
-      if (this.$document.scrollTop() > 230) {
+      if (this.$document.scrollTop() > 220) {
         this.$aboutImg.addClass('fade-in');
       }
-      if (this.$document.scrollTop() > 750) {
+      if (this.$document.scrollTop() > 730) {
         this.$selection.addClass('fade-in');
       }
       if (this.$document.scrollTop() > 1700) {

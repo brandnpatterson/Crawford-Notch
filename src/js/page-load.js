@@ -3,7 +3,7 @@
 **/
 
 function onReady (callback) {
-  const intervalID = window.setInterval(checkReady, 1250);
+  const intervalID = window.setInterval(checkReady, 900);
   function checkReady() {
     if (document.getElementsByTagName('body')[0] !== undefined) {
       window.clearInterval(intervalID);
