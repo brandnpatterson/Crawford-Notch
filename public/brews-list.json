@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Saisons",
+    "brews": [
+      "David's Sunshine",
+      "Rose Noir",
+      "Hamlet's Paw"
+    ]
+  },
+  {
+    "type": "Dubbles",
+    "brews": [
+      "Nicholaus",
+      "Motoki Jewel",
+      "Urban Saffy"
+    ]
+  },
+  {
+    "type": "Triples",
+    "brews": [
+      "Desmorious",
+      "Zachary's Filter",
+      "Axe of Zina"
+    ]
+  }
+]

@@ -16,5 +16,5 @@ function show (id, value) {
 }
 onReady(function () {
   show('app', true);
-  show('spinner', false);
+  // show('spinner', false);
 });
