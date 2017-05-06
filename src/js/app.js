@@ -4,7 +4,7 @@
 
 import $ from 'jquery';
 
-$(document).ready(function crawfordNotch() {
+$(document).ready(function crawfordNotch () {
   // $medium same var name as sass
   const $medium = 724;
   const app = {

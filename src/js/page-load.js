@@ -2,8 +2,8 @@
  *  Preload spinner
 **/
 
-function onReady(callback) {
-  const intervalID = window.setInterval(checkReady, 500);
+function onReady (callback) {
+  const intervalID = window.setInterval(checkReady, 1250);
   function checkReady() {
     if (document.getElementsByTagName('body')[0] !== undefined) {
       window.clearInterval(intervalID);
@@ -11,10 +11,10 @@ function onReady(callback) {
     }
   }
 }
-function show(id, value) {
+function show (id, value) {
   document.getElementById(id).style.display = value ? 'block' : 'none';
 }
 onReady(function () {
   show('app', true);
-  show('spinner-container', false);
+  show('spinner', false);
 });
