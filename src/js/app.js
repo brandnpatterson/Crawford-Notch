@@ -5,9 +5,8 @@
 import $ from 'jquery';
 
 $(document).ready(function crawfordNotch() {
-  // same var name as sass
+  // $medium same var name as sass
   const $medium = 724;
-
   const app = {
     init () {
       this.cacheDOM();
