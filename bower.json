@@ -1,0 +1,21 @@
+{
+  "name": "crawford-notch",
+  "description": "crawford-notch",
+  "main": "public/bundle.js",
+  "authors": [
+    "Brandon Patterson"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/brandnpatterson/crawford-notch",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "SVG-Loaders": "svg-loaders#^1.0.2"
+  }
+}
