@@ -1,7 +1,7 @@
 import template from './../hbs/brews-list-template.hbs';
 
 var request = new XMLHttpRequest();
-request.open('GET', './public/brews-list.json')
+request.open('GET', './src/json/brews-list.json')
 request.onload = function () {
   var data = JSON.parse(request.responseText);
   renderData(data);
